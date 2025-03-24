@@ -1,46 +1,95 @@
-**Network Packet Sniffer**
-*Author: ARUVASAGA CHITHAN*
-his is a simple network packet sniffer written in Python using the Scapy library. It captures network packets and displays information such as source IP, destination IP, protocol, and payload data.
+# 🌐 Network Packet Sniffer
 
-Requirements
-Python 3.x
-Scapy (pip install scapy)
-How to Run
-Clone the repository
-Clone the repository to your local machine:
+## 🛠 Author: **ARUVASAGA CHITHAN**
 
-    
-    git clone https://github.com/aruvasaga-chithan/ELite-Tech-Intern-task-3
+---
 
+## 📌 Project Overview
 
-Install dependencies
-Install the required package(s) with:
+This is a simple **Network Packet Sniffer** written in Python using the **Scapy** library. It captures network packets and displays details such as:
 
+- **Source IP**: The sender's IP address
+- **Destination IP**: The receiver's IP address
+- **Protocol**: The protocol used (TCP, UDP, ICMP, etc.)
+- **Payload**: The packet's payload data (if available)
 
-    pip install scapy
-Run the script
-Execute the packet sniffer script:
+> ⚠️ **Note:** This tool requires administrator/root privileges to capture packets on network interfaces.
 
+---
 
-python packet_sniffer.py
-Note: You may need administrative/root privileges for network interface access, especially on Linux/Mac. In that case, run the script with sudo:
+## 🚀 Features
 
+✅ **Real-time Packet Capturing**: Continuously monitors and captures packets on the selected network interface.
+✅ **Protocol Identification**: Detects and categorizes packets based on protocol type.
+✅ **Readable Output**: Displays extracted packet details in a structured format.
+✅ **Lightweight & Efficient**: Uses Python's **Scapy** library for efficient packet sniffing.
 
-    sudo python packet_sniffer.py
-Usage
-Once you run the script, it will begin capturing packets on the specified network interface (default is Wi-Fi). For each captured packet, the following information will be displayed:
+---
 
-Source IP: The IP address of the packet’s sender.
-Destination IP: The IP address of the packet’s receiver.
-Protocol: Protocol type used in the packet.
-Payload: The payload data, if available, decoded as text.
-Example output:
+## 🛠 Requirements
 
+📌 **Python 3.x** installed
+📌 **Scapy** library (Install using `pip`)
 
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Clone the Repository
+
+```bash
+   git clone https://github.com/aruvasaga-chithan/Packet-Sniffer
+```
+
+### 2️⃣ Navigate to the Project Directory
+
+```bash
+   cd Packet-Sniffer
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+   pip install scapy
+```
+
+### 4️⃣ Run the Script
+
+```bash
+   python packet_sniffer.py
+```
+
+> 🔹 On **Linux/macOS**, you might need to run the script with `sudo` to capture packets:
+
+```bash
+   sudo python packet_sniffer.py
+```
+
+---
+
+## 📊 Usage
+
+Once the script starts, it will begin capturing packets on the **default network interface** (Wi-Fi). Each captured packet will display the following details:
+
+```
 -------------------------------------------------
 Packet: <Packet Summary>
 Source IP: <Source IP Address>
 Destination IP: <Destination IP Address>
-Protocol: <Protocol Number>
+Protocol: <Protocol Type>
 Payload: <Decoded Payload Data>
 -------------------------------------------------
+```
+
+---
+
+## 🤝 Contribute
+
+🔗 Fork the project, create issues, and submit pull requests!
+
+---
+
+## 📜 License
+
+📝 This project is licensed under the **MIT License**.
+
